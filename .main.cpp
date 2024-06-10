@@ -1,2 +1,10 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#include <iostream>
+#include "dec.h"
+using namespace std;
+int main()
+{
+	introduction();
+	take_turn();
+	end_game();
+	return 0;
+}
