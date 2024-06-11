@@ -1,5 +1,4 @@
 #include <iostream>
-#include "dec.h"
 #include <stdlib.h>
 #include <string> //Used to convert the set color macro to a string
 //globally defined
