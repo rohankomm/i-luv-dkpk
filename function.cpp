@@ -24,16 +24,16 @@ void introduction()
    cout<<"\n";
   //headers
   cout << SET_COLOR("\033[37m"); // Set text color to white
-  cout<< SET_COLOR("\033[30m") << "***********\n";
-  cout<<SET_COLOR("\033[37m")  << "Tic-Tac-Toe\n";
-  cout<< SET_COLOR("\033[30m") <<"***********\n";
+  cout << SET_COLOR("\033[30m") << "***********\n";
+  cout << SET_COLOR("\033[37m")  << "Tic-Tac-Toe\n";
+  cout << SET_COLOR("\033[30m") <<"***********\n";
 
-  cout<< SET_COLOR("\033[34m") << "Player 1) X\n";
-  cout<< SET_COLOR("\033[31m") << "Player 2) O\n";
+  cout << SET_COLOR("\033[34m") << "Player 1) X\n";
+  cout << SET_COLOR("\033[31m") << "Player 2) O\n";
 cout << SET_COLOR("\033[37m");
   
 //displays grid
-  cout<<"The 3x3 grid is shown below:\n\n";
+  cout << "\nThe 3x3 grid is shown below:\n\n";
 
   cout << "     |     |      \n";
   cout << "  "<< SET_COLOR("\033[35m") << "1  " << SET_COLOR("\033[37m") << "|  " << SET_COLOR("\033[35m") << "2  " << SET_COLOR("\033[37m") << "|  " << SET_COLOR("\033[35m") << "3   \n";
@@ -176,7 +176,7 @@ void update_board()
   }
 }
 
-//cahnges player after each turn
+//changes player after each turn
 void change_player() {
   if (player == 1){
     player++; //changes to player 2
@@ -204,7 +204,8 @@ void end_game()
 {
   if(is_winner())
   {
-    cout<< SET_COLOR("\033[33m") << "There is a winner!"<<endl; //winner message
+    change_player();
+    cout<< SET_COLOR("\033[33m") << "Player " << player << " is the winner!" << endl; //winner message
     cout << SET_COLOR("\033[37m");
 
   }
